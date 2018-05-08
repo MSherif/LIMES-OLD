@@ -1,0 +1,32 @@
+19.05.2011 16:19:43 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+19.05.2011 16:19:43 WARN  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:224): For input string: ""
+19.05.2011 16:19:43 WARN  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:226): Some values were not set. Crossing my fingers and using defaults.
+19.05.2011 16:19:43 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:229): File Examples\BioMedLinks\template.xml is valid.
+19.05.2011 16:19:43 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:56): ID: MA
+Prefixes: {}
+Endpoint: D:/Work/Java/LIMES/Examples/BioMedLinks/ma.n3
+Graph: null
+Restrictions: []
+Properties: []
+Page size: -1
+Type: n3
+
+19.05.2011 16:19:43 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:57): ID: null
+Prefixes: {}
+Endpoint: null
+Graph: null
+Restrictions: []
+Properties: []
+Page size: -1
+Type: n3
+
+19.05.2011 16:19:43 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:62): Loading source data ...
+19.05.2011 16:19:43 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-913233287.ser
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file D:\Work\Java\LIMES\cache\-913233287.ser
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 2956
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:67): Loading target data ...
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-1808373531.ser
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for null
+19.05.2011 16:19:44 FATAL [main] de.uni_leipzig.simba.query.N3QueryModule.fillCache(N3QueryModule.java:67): Exception:null
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:154): Serializing 0 objects to D:\Work\Java\LIMES\cache\-1808373531.ser
+19.05.2011 16:19:44 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:97): Getting links ...

@@ -1,0 +1,6 @@
+24.04.2011 12:52:16 WARN  [main] de.uni_leipzig.simba.io.DtdChecker.error(DtdChecker.java:37): Error at 64 line.
+24.04.2011 12:52:16 WARN  [main] de.uni_leipzig.simba.io.DtdChecker.error(DtdChecker.java:38): The content of element type "LIMES" must match "(PREFIX*,SOURCE,TARGET,METRIC,ACCEPTANCE,REVIEW,EXECUTION*,GRANULARITY*,OUTPUT*)".
+24.04.2011 12:52:16 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:212): File Examples\Paper\saim\diseasome.xml is valid.
+24.04.2011 12:52:16 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:56): 
+24.04.2011 12:52:16 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:57): 
+24.04.2011 12:52:16 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:62): Loading source data ...

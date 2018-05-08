@@ -1,0 +1,73 @@
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:107): Source config
+ID: geonames
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: http://lgd.aksw.org:8900/sparql
+Graph: http://geonames.org
+Restrictions: [ ]
+Properties: [geonames:population, geonames:alternateName, geonames:name]
+Page size: -1
+Type: sparql
+
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:132): Target config
+ID: lgd
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: http://linkedgeodata.org/sparql/
+Graph: null
+Restrictions: [?y rdf:type lgdo:Place]
+Properties: [lgdo:population, rdfs:label]
+Page size: 1000
+Type: sparql
+
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:136): Metric used AND(euclidean(x.dbpedia-o:populationTotal,y.lgdo:population)|0.0001, OR(trigrams(x.geonames:alternateName, y.rdfs:label)|0.9, trigrams(x.geonames:name, y.rdfs:label)|0.9)|0.9)
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:157): Instances with similarity beyond 1.0E-5 will be written in places.nt and linked with owl:sameAs
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:179): Linking will be carried out by using the Simple execution plan
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:188): Linking will be carried by using granularity 16
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:198): Output will be written in TAB format.
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:202): Instances with similarity between 0.0 and 1.0E-5 will be written in simpop_review.nt and linked with owl:sameAs
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:212): File Examples\Paper\largescale\geonames-linkedgeodata.limes.xml is valid.
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:56): ID: geonames
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: http://lgd.aksw.org:8900/sparql
+Graph: http://geonames.org
+Restrictions: [ ]
+Properties: [geonames:population, geonames:alternateName, geonames:name]
+Page size: -1
+Type: sparql
+
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:57): ID: lgd
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: http://linkedgeodata.org/sparql/
+Graph: null
+Restrictions: [?y rdf:type lgdo:Place]
+Properties: [lgdo:population, rdfs:label]
+Page size: 1000
+Type: sparql
+
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:62): Loading source data ...
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-2013774346.ser
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file D:\Work\Java\LIMES\cache\-2013774346.ser
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 534
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:67): Loading target data ...
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for lgd
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:71): Properties are [lgdo:population, rdfs:label]
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:117): Query issued is 
+PREFIX lgdp: <http://linkedgeodata.org/property/>
+PREFIX dc-terms: <http://purl.org/dc/terms>
+PREFIX dbpedia-p: <http://dbpedia.org/property/>
+PREFIX lgdo: <http://linkedgeodata.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-r: <http://dbpedia.org/resource/Category/>
+PREFIX dbpedia-o: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+SELECT DISTINCT ?y ?v0 ?v1
+WHERE {
+?y rdf:type lgdo:Place .
+?y lgdo:population ?v0 .
+?y rdfs:label ?v1 .
+}
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:119): Querying the endpoint.
+08.05.2011 13:27:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:127): Getting statements 0 to 1000

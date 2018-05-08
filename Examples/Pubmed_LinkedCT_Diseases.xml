@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LIMES SYSTEM "limes.dtd">
+<LIMES>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/1999/02/22-rdf-syntax-ns#</NAMESPACE>
+		<LABEL>rdf</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+		<LABEL>rdfs</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+		<LABEL>owl</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://data.linkedct.org/resource/linkedct/</NAMESPACE>
+		<LABEL>linkedct</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://purl.org/dc/elements/1.1/</NAMESPACE>
+		<LABEL>dc</LABEL>
+	</PREFIX>
+	<PREFIX>
+		<NAMESPACE>http://bio2rdf.org/ns/mesh#</NAMESPACE>
+		<LABEL>meshr</LABEL>
+	</PREFIX>
+
+<SOURCE>
+		<ID>mesh</ID>
+		<ENDPOINT>http://mesh.bio2rdf.org/sparql</ENDPOINT>
+		<VAR>?y</VAR>
+		<PAGESIZE>5000</PAGESIZE>
+		<RESTRICTION>?y rdf:type meshr:Concept</RESTRICTION>
+		<PROPERTY>dc:title</PROPERTY>
+	</SOURCE>
+	
+	<TARGET>
+		<ID>linkedct</ID>
+		<ENDPOINT>http://data.linkedct.org/sparql</ENDPOINT>
+		<VAR>?x</VAR>
+		<PAGESIZE>5000</PAGESIZE>
+		<RESTRICTION>?x rdf:type linkedct:condition</RESTRICTION>
+		<PROPERTY>linkedct:condition_name</PROPERTY>
+	</TARGET>	
+
+	<METRIC>levenshtein(y.dc:title, x.linkedct:condition_name)</METRIC>
+
+	<ACCEPTANCE>
+		<THRESHOLD>0.98</THRESHOLD>
+		<FILE>accepted.txt</FILE>
+		<RELATION>owl:sameAs</RELATION>
+	</ACCEPTANCE>
+	<REVIEW>
+		<THRESHOLD>0.75</THRESHOLD>
+		<FILE>reviewme.txt</FILE>
+		<RELATION>owl:sameAs</RELATION>
+	</REVIEW>
+</LIMES>

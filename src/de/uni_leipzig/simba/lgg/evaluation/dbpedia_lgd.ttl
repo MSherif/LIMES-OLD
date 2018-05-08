@@ -1,0 +1,68 @@
+@prefix : <http://limes.sf.net/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix lgdo: <http://linkedgeodata.org/ontology/> .
+@prefix agc: <http://www.opengis.net/ont/geosparql#> .
+@prefix geom: <http://geovocab.org/geometry#> .
+
+:dbpedia_lgd	a			:LimesSpecs ;
+			:hasSource		:dbpedia ;
+			:hasTarget		:lgd ;
+			:hasMetric		:metric ;
+			:hasAcceptance :acceptance ;
+			:hasReview 		:review .
+		
+:dbpedia	a				:SourceDataset ;
+			rdfs:label		"DBpedia";
+#			:endPoint		"http://dbpedia.org/sparql" ;
+			:endPoint		"src/de/uni_leipzig/simba/lgg/evaluation/dbpedia.nt";
+			:type			"n3";
+			:variable		"?x" ;
+#			:pageSize		"1000";
+			:pageSize		"-1";
+#			:restriction 	"?x rdf:type dbpedia-owl:AdministrativeRegion" ;
+			:restriction 	"?" ;
+#			:property 		"dbpedia-owl:abstract" ;
+#			:property 		"dbpedia-owl:areaTotal" ;
+#			:property 		"dbpedia-owl:elevation" ;
+#			:property 		"dbpedia-owl:leaderTitle" ;
+#			:property 		"dbpedia-owl:populationAsOf" ;
+#			:property 		"dbpedia-owl:populationTotal" ;
+#			:property 		"dbpedia-owl:postalCode" ;
+##			:property 		"dbpedia-owl:PopulatedPlace%2FareaTotal" ;
+#			:property 		"rdfs:comment" ;
+			:property 		"geo:geometry" ;
+			:property 		"rdfs:label AS lowercase" .
+
+:lgd		a				:TargetDataset ;
+			rdfs:label		"LinkedGeoData";
+#			:endPoint		"http://linkedgeodata.org/sparql" ;
+			:endPoint		"src/de/uni_leipzig/simba/lgg/evaluation/lgd.nt" ; 
+			:type			"n3";
+			:variable		"?y" ;
+#			:pageSize		"2000";
+			:pageSize		"-1";
+#			:restriction	"?y rdf:type lgdo:City" ;
+			:restriction	"" ;
+#			:property 		"lgdo:is_in%3Acontinent" ;
+#			:property 		"lgdo:is_in%3Acountry" ;
+#			:property 		"geom:geometry/agc:asWKT" ;
+			:property 		"geo:geometry" ;
+			:property 		"rdfs:label AS lowercase" .
+
+:metric		a				:Metric ;
+			:expression		"" .
+
+:acceptance	a			:Acceptance ;
+			:threshold 		"1" ;
+			:file 			"";
+			:relation 		"owl:sameAs" .
+
+:review		a				:Review ;
+			:threshold 		"0" ;
+			:file 			"";
+			:relation 		"" .

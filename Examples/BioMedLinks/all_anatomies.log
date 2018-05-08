@@ -1,0 +1,48 @@
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:115): Source config
+ID: MA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Data/VIRAL LIMES/merged_file.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:148): Target config
+ID: FMA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Data/VIRAL LIMES/merged_file.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:152): Metric used trigrams(x.rdfs:label, y.rdfs:label)
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:173): Instances with similarity beyond 0.1 will be written in D:/Work/Java/LIMES/Examples/BioMedLinks/all_accepted_0_1.nt and linked with owl:sameAs
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:195): Linking will be carried out by using the Simple execution plan
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:204): Linking will be carried by using granularity 16
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:214): Output will be written in TAB format.
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:218): Instances with similarity between 1.0 and 0.1 will be written in D:/Work/Java/LIMES/Examples/BioMedLinks/all_review_0_1.nt and linked with owl:sameAs
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:228): File Examples\BioMedLinks\all_anatomies.xml is valid.
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:56): ID: MA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Data/VIRAL LIMES/merged_file.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:57): ID: FMA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Data/VIRAL LIMES/merged_file.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:62): Loading source data ...
+01.06.2011 10:52:11 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-229529792.ser

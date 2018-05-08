@@ -1,0 +1,109 @@
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:115): Source config
+ID: source
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, owl=http://www.w3.org/2002/07/owl#, sider=http://www4.wiwiss.fu-berlin.de/sider/resource/sider/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, prefix2=http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/sider/
+Restrictions: [?src rdf:type sider:drugs]
+Properties: [sider:siderdrugid]
+Page size: 1000
+Type: sparql
+
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:148): Target config
+ID: target
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, owl=http://www.w3.org/2002/07/owl#, sider=http://www4.wiwiss.fu-berlin.de/sider/resource/sider/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, prefix2=http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/drugbank/
+Restrictions: [?dest rdf:type drugbank:drugs]
+Properties: [drugbank:limsdrugid]
+Page size: 1000
+Type: sparql
+
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:152): Metric used trigrams(src.sider:siderdrugid, dest.drugbank:limsdrugid)
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:173): Instances with similarity beyond 1.0 will be written in test1.nt and linked with owl:sameAs
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:195): Linking will be carried out by using the Linear execution plan
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:206): Linking will be carried by using the default granularity.
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:214): Output will be written in N3 format.
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:218): Instances with similarity between 1.0 and 1.0 will be written in test2.nt and linked with owl:sameAs
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:228): File Examples\Paper\largescale\autoconfig.xml is valid.
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:124): ID: source
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, owl=http://www.w3.org/2002/07/owl#, sider=http://www4.wiwiss.fu-berlin.de/sider/resource/sider/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, prefix2=http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/sider/
+Restrictions: [?src rdf:type sider:drugs]
+Properties: [sider:siderdrugid]
+Page size: 1000
+Type: sparql
+
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:125): ID: target
+Prefixes: {rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, owl=http://www.w3.org/2002/07/owl#, sider=http://www4.wiwiss.fu-berlin.de/sider/resource/sider/, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, prefix2=http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/drugbank/
+Restrictions: [?dest rdf:type drugbank:drugs]
+Properties: [drugbank:limsdrugid]
+Page size: 1000
+Type: sparql
+
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): Loading source data ...
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-1668878737.ser
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for source
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:72): Properties are [sider:siderdrugid]
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:118): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX drugbank: <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sider: <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prefix2: <http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/>
+SELECT DISTINCT ?src ?v0
+WHERE {
+?src rdf:type sider:drugs .
+?src sider:siderdrugid ?v0 .
+}
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:120): Querying the endpoint.
+11.08.2011 19:46:52 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 0 to 1000
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:205): Retrieved 0 triples and 0 entities.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:206): Retrieving statements took 0.716 seconds.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:154): Serializing 0 objects to D:\Work\Java\LIMES\cache\-1668878737.ser
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading target data ...
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-805034568.ser
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for target
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:72): Properties are [drugbank:limsdrugid]
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:118): Query issued is 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX drugbank: <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX sider: <http://www4.wiwiss.fu-berlin.de/sider/resource/sider/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX prefix2: <http://www4.wiwiss.fu-berlin.de/drugbank/vocab/resource/class/>
+SELECT DISTINCT ?dest ?v0
+WHERE {
+?dest rdf:type drugbank:drugs .
+?dest drugbank:limsdrugid ?v0 .
+}
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:120): Querying the endpoint.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 0 to 1000
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:205): Retrieved 0 triples and 0 entities.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:206): Retrieving statements took 0.078 seconds.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:154): Serializing 0 objects to D:\Work\Java\LIMES\cache\-805034568.ser
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:165): Getting links ...
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:68): Expression trigrams(src.sider:siderdrugid, dest.drugbank:limsdrugid) is atomic.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:69): Starting atomic mapper on trigrams(src.sider:siderdrugid, dest.drugbank:limsdrugid) with threshold 1.0
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:116): Starting PPJoinPlus
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:187): Filling objects from source knowledge base.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:203): Filling objects from target knowledge base.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.tokenizer(PPJoinPlusPlus.java:563): Tokenizing carried out in 1ms.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:232): Beginninng comparison per se
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:234): Using metric Trigram
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:311): Mapping carried out using 0 comparisons.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:71): Atomic mapper got 0 links
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:168): Got links in 11ms.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:20): Getting serializer with name N3
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:20): Getting serializer with name N3
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:173): Using N3Serializer to serialize
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:193): Returned 0 links above acceptance threshold.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:194): Returned 0 links to review.
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:199): Mapping carried out in 1.045 seconds
+11.08.2011 19:46:53 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:200): Done.

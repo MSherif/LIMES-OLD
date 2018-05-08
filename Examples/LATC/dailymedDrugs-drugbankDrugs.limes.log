@@ -1,0 +1,72 @@
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:115): Source config
+ID: dailymed
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/dailymed/
+Restrictions: [?x rdf:type dailymed:Offer]
+Properties: [dailymed:name]
+Page size: 1000
+Type: sparql
+
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:148): Target config
+ID: drugbank
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/drugbank/
+Restrictions: [?y rdf:type drugbank:drugs]
+Properties: [rdfs:label, drugbank:genericName]
+Page size: 1000
+Type: sparql
+
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:152): Metric used OR(trigrams(x.dailymed:name, y.rdfs:label)|0.9, trigrams(x.dailymed:name, y.drugbank:genericName)|0.9)
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:173): Instances with similarity beyond 0.9 will be written in examples/latc/dailymed-drugbank.ttl and linked with owl:sameAs
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:195): Linking will be carried out by using the Simple execution plan
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:204): Linking will be carried by using granularity 16
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:214): Output will be written in TAB format.
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:218): Instances with similarity between 0.9 and 0.9 will be written in examples/latc/dailymed-drugbank.toReview.ttl and linked with owl:sameAs
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:228): File Examples\LATC\dailymedDrugs-drugbankDrugs.limes.xml is valid.
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:124): ID: dailymed
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/dailymed/
+Restrictions: [?x rdf:type dailymed:Offer]
+Properties: [dailymed:name]
+Page size: 1000
+Type: sparql
+
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:125): ID: drugbank
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/drugbank/
+Restrictions: [?y rdf:type drugbank:drugs]
+Properties: [rdfs:label, drugbank:genericName]
+Page size: 1000
+Type: sparql
+
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): Loading source data ...
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for dailymed
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:72): Properties are [dailymed:name]
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:118): Query issued is 
+PREFIX dc-terms: <http://purl.org/dc/terms>
+PREFIX dbpedia-p: <http://dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX drugbank: <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/>
+PREFIX dbpedia-r: <http://dbpedia.org/resource/Category/>
+PREFIX dbpedia-o: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dailymed: <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/>
+SELECT DISTINCT ?x ?v0
+WHERE {
+?x rdf:type dailymed:Offer .
+?x dailymed:name ?v0 .
+}
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:120): Querying the endpoint.
+28.11.2011 14:02:46 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 0 to 1000
+28.11.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:205): Retrieved 0 triples and 0 entities.
+28.11.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:206): Retrieving statements took 0.768 seconds.
+28.11.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:154): Serializing 0 objects to D:\Work\Java\LIMES\cache\1020917870.ser
+28.11.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:135): Loading target data ...
+28.11.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\55667830.ser

@@ -1,0 +1,4 @@
+Source		Target		Description
+Dailymed	Drugbank	Links ingredients of medication with drugs
+Dailymed	Dbpedia		Links Organizations in Dailymed with DBpedia organizations
+Drugbank	Dailymed	Links drugs in Drugbank with the drugs of which they are the active elements in Dailymed

@@ -1,0 +1,73 @@
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:115): Source config
+ID: MA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Java/LIMES/Examples/BioMedLinks/ma.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:148): Target config
+ID: FMA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Java/LIMES/Examples/BioMedLinks/fma.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:152): Metric used trigrams(x.rdfs:label, y.rdfs:label)
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:173): Instances with similarity beyond 0.3 will be written in D:/Work/Java/LIMES/Examples/BioMedLinks/fma2ma_accepted.nt and linked with owl:sameAs
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:195): Linking will be carried out by using the Simple execution plan
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:204): Linking will be carried by using granularity 16
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:214): Output will be written in TAB format.
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:218): Instances with similarity between 0.3 and 0.3 will be written in D:/Work/Java/LIMES/Examples/BioMedLinks/fma2ma_review.nt and linked with owl:sameAs
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:228): File Examples\BioMedLinks\fma-ma.xml is valid.
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:56): ID: MA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Java/LIMES/Examples/BioMedLinks/ma.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:57): ID: FMA
+Prefixes: {lgdp=http://linkedgeodata.org/property/, dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, lgdo=http://linkedgeodata.org/ontology/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, wgs84=http://www.w3.org/2003/01/geo/wgs84_pos#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, geonames=http://www.geonames.org/ontology#}
+Endpoint: D:/Work/Java/LIMES/Examples/BioMedLinks/fma.n3
+Graph: null
+Restrictions: [ ]
+Properties: [rdfs:label]
+Page size: -1
+Type: n3
+
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:62): Loading source data ...
+19.05.2011 16:38:47 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\1574306547.ser
+19.05.2011 16:38:48 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file D:\Work\Java\LIMES\cache\1574306547.ser
+19.05.2011 16:38:48 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 2956
+19.05.2011 16:38:48 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:67): Loading target data ...
+19.05.2011 16:38:48 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:193): Found cached data. Loading data from file D:\Work\Java\LIMES\cache\-57037595.ser
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:199): Cached data loaded successfully from file D:\Work\Java\LIMES\cache\-57037595.ser
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:200): Size = 78977
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:97): Getting links ...
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:68): Expression trigrams(x.rdfs:label, y.rdfs:label) is atomic.
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:69): Starting atomic mapper on trigrams(x.rdfs:label, y.rdfs:label) with threshold 0.3
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:116): Starting PPJoinPlus
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:188): Filling objects from source knowledge base.
+19.05.2011 16:39:06 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:204): Filling objects from target knowledge base.
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.tokenizer(PPJoinPlusPlus.java:561): Tokenizing carried out in 291ms.
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:233): Beginninng comparison per se
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:235): Using metric Trigram
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.mapper.atomic.PPJoinPlusPlus.getMapping(PPJoinPlusPlus.java:312): Mapping carried out using 1855 comparisons.
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:71): Atomic mapper got 1162 links
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:100): Got links in 558ms.
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:20): Getting serializer with name TAB
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.io.SerializerFactory.getSerializer(SerializerFactory.java:20): Getting serializer with name TAB
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:105): Using TabSeparatedSerializer to serialize
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:125): Returned 1199 links above acceptance threshold.
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:126): Returned 0 links to review.
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:131): Mapping carried out in 19.778 seconds
+19.05.2011 16:39:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:132): Done.

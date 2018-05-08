@@ -1,0 +1,40 @@
+@prefix : <http://limes.sf.net/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acm_dblp	a				:LimesSpecs ;
+			:hasSource		:dbpedia ;
+			:hasTarget		:drugbank ;
+			:hasMetric		:metric ;
+			:hasAcceptance 	:acceptance ;
+			:hasReview 		:review .
+		
+:dbpedia	a				:SourceDataset ;
+			rdfs:label		"DBpedia";
+			:endPoint		"D:/Work/Data/DBvsLIMES/DBLP-ACM/ACM.csv" ;
+			:variable		"?x" ;
+			:pageSize		"-1";
+			:restriction 	"" ;
+			:property 		"title" .
+
+:drugbank	a				:TargetDataset ;
+			rdfs:label		"DrugBank";
+			:endPoint		"D:/Work/Data/DBvsLIMES/DBLP-ACM/DBLP2.csv" ;
+			:variable		"?y" ;
+			:pageSize		"-1";
+			:restriction	"" ;
+			:property 		"title" .
+
+:metric		a				:Metric ;
+			:expression		"qgrams(x.title, y.title)" .
+
+:acceptance	a				:Acceptance ;
+			:threshold 		"0.98"^^xsd:double ;
+			:file 			"acm_dblp_accepted.nt";
+			:relation 		owl:sameAs .
+
+:review		a				:Review ;
+			:threshold 		"0.95"^^xsd:double ;
+			:file 			"acm_dblp_reviewme.nt";
+			:relation 		owl:sameAs .

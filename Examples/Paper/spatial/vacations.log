@@ -1,0 +1,71 @@
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:64): File is valid. Parsing ...
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:115): Source config
+ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?x rdf:type dbpedia-o:Town]
+Properties: [dbpedia-o:populationTotal, dbpedia-o:elevation]
+Page size: 1000
+Type: sparql
+
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:148): Target config
+ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?x rdf:type dbpedia-o:Town]
+Properties: [dbpedia-o:populationTotal, dbpedia-o:elevation]
+Page size: 1000
+Type: sparql
+
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:152): Metric used euclidean(x.dbpedia-o:populationTotal|dbpedia-o:elevation,y.dbpedia-o:populationTotal|dbpedia-o:elevation)
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:173): Instances with similarity beyond 0.5 will be written in simpop.nt and linked with owl:sameAs
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:195): Linking will be carried out by using the Simple execution plan
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:204): Linking will be carried by using granularity 1
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:214): Output will be written in TAB format.
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:218): Instances with similarity between 0.5 and 0.5 will be written in simpop_review.nt and linked with owl:sameAs
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:228): File Examples\Paper\spatial\vacations.xml is valid.
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:124): ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?x rdf:type dbpedia-o:Town]
+Properties: [dbpedia-o:populationTotal, dbpedia-o:elevation]
+Page size: 1000
+Type: sparql
+
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:125): ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint: http://dbpedia.org/sparql
+Graph: null
+Restrictions: [?x rdf:type dbpedia-o:Town]
+Properties: [dbpedia-o:populationTotal, dbpedia-o:elevation]
+Page size: 1000
+Type: sparql
+
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:130): Loading source data ...
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:205): No cached data found for dbpedia
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:20): Generating sparql reader
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:72): Properties are [dbpedia-o:populationTotal, dbpedia-o:elevation]
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:118): Query issued is 
+PREFIX dc-terms: <http://purl.org/dc/terms>
+PREFIX dbpedia-p: <http://dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-r: <http://dbpedia.org/resource/Category/>
+PREFIX dbpedia-o: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?x ?v0 ?v1
+WHERE {
+?x rdf:type dbpedia-o:Town .
+?x dbpedia-o:populationTotal ?v0 .
+?x dbpedia-o:elevation ?v1 .
+}
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:120): Querying the endpoint.
+20.06.2011 11:21:13 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 0 to 1000
+20.06.2011 11:21:15 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 1000 to 2000
+20.06.2011 11:21:15 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 2000 to 3000
+20.06.2011 11:21:16 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 3000 to 4000
+20.06.2011 11:21:16 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 4000 to 5000
+20.06.2011 11:21:20 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:128): Getting statements 5000 to 6000

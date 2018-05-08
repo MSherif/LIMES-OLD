@@ -1,0 +1,67 @@
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:163): Source = ID: dailymed
+Var: ?x
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/dailymed/
+Restrictions: [?x rdf:type dailymed:ingredients]
+Properties: [rdfs:label]
+Functions: {rdfs:label={rdfs:label=lowercase}}
+Page size: 1000
+Type: sparql
+
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:168): Target = ID: drugbank
+Var: ?y
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/drugbank/
+Restrictions: [?y rdf:type drugbank:drugs]
+Properties: [rdfs:label, drugbank:genericName]
+Functions: {rdfs:label={rdfs:label=lowercase}, drugbank:genericName={drugbank:genericName=lowercase}}
+Page size: 1000
+Type: sparql
+
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:126): ID: dailymed
+Var: ?x
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/dailymed/
+Restrictions: [?x rdf:type dailymed:ingredients]
+Properties: [rdfs:label]
+Functions: {rdfs:label={rdfs:label=lowercase}}
+Page size: 1000
+Type: sparql
+
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:127): ID: drugbank
+Var: ?y
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, drugbank=http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#, dailymed=http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/}
+Endpoint: http://lgd.aksw.org:5678/sparql
+Graph: http://www.instancematching.org/oaei/di/drugbank/
+Restrictions: [?y rdf:type drugbank:drugs]
+Properties: [rdfs:label, drugbank:genericName]
+Functions: {rdfs:label={rdfs:label=lowercase}, drugbank:genericName={drugbank:genericName=lowercase}}
+Page size: 1000
+Type: sparql
+
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:132): Loading source data ...
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.getData(HybridCache.java:243): No cached data found for dailymed
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.query.QueryModuleFactory.getQueryModule(QueryModuleFactory.java:19): Generating <sparql> reader
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:69): Query Graph: http://www.instancematching.org/oaei/di/dailymed/
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:92): Properties are [rdfs:label]
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:134): Query issued is 
+PREFIX dc-terms: <http://purl.org/dc/terms>
+PREFIX dbpedia-p: <http://dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX drugbank: <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugbank/>
+PREFIX dbpedia-r: <http://dbpedia.org/resource/Category/>
+PREFIX dbpedia-o: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dailymed: <http://www4.wiwiss.fu-berlin.de/dailymed/resource/dailymed/>
+SELECT DISTINCT ?x ?v0
+FROM <http://www.instancematching.org/oaei/di/dailymed/>
+WHERE {
+?x rdf:type dailymed:ingredients .
+?x rdfs:label ?v0 .
+}
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:136): Querying the endpoint.
+03.07.2012 16:47:07 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:144): Getting statements 0 to 1000

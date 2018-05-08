@@ -1,0 +1,95 @@
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:63): File is valid. Parsing ...
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:106): Source config
+ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint:  http://dbpedia.aksw.org:8899/sparql
+Graph: null
+Restrictions: [?x rdf:type dbpedia-o:Book]
+Properties: [dbpedia-o:pages]
+Page size: -1
+Type: sparql
+
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:131): Target config
+ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint:  http://dbpedia.aksw.org:8899/sparql
+Graph: null
+Restrictions: [?y rdf:type dbpedia-o:Book]
+Properties: [dbpedia-o:pages]
+Page size: -1
+Type: sparql
+
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:135): Metric used euclidean(x.dbpedia-o:pages,y.dbpedia-o:pages)
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:156): Instances with similarity beyond 1.0 will be written in simpop.nt and linked with owl:sameAs
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:177): Linking will be carried out by using the Simpleexecution plan
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:183): Linking will be carried by using granularity 1
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:189): Output will be written in TABformat.
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:191): Instances with similarity between 0.04 and 1.0 will be written in simpop_review.nt and linked with owl:sameAs
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.io.ConfigReader.validateAndRead(ConfigReader.java:200): File Examples\Paper\books.xml is valid.
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:56): ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint:  http://dbpedia.aksw.org:8899/sparql
+Graph: null
+Restrictions: [?x rdf:type dbpedia-o:Book]
+Properties: [dbpedia-o:pages]
+Page size: -1
+Type: sparql
+
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:57): ID: dbpedia
+Prefixes: {dc-terms=http://purl.org/dc/terms, dbpedia-p=http://dbpedia.org/property/, rdfs=http://www.w3.org/2000/01/rdf-schema#, dbpedia-r=http://dbpedia.org/resource/Category/, dbpedia-o=http://dbpedia.org/ontology/, owl=http://www.w3.org/2002/07/owl#, rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns#}
+Endpoint:  http://dbpedia.aksw.org:8899/sparql
+Graph: null
+Restrictions: [?y rdf:type dbpedia-o:Book]
+Properties: [dbpedia-o:pages]
+Page size: -1
+Type: sparql
+
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:62): Loading source data ...
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.getData(PPJoinController.java:151): No cached data found for dbpedia
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:69): Properties are [dbpedia-o:pages]
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:99): Query issued is 
+PREFIX dc-terms: <http://purl.org/dc/terms>
+PREFIX dbpedia-p: <http://dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-r: <http://dbpedia.org/resource/Category/>
+PREFIX dbpedia-o: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?x ?v0
+WHERE {
+?x rdf:type dbpedia-o:Book .
+?x dbpedia-o:pages ?v0 .
+}
+
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:102): Querying the endpoint.
+08.04.2011 14:02:42 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:110): Getting statements 0 to -1
+08.04.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:191): Retrieved 14714 triples and 14505 entities.
+08.04.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:192): Retrieving statements took 5.453 seconds.
+08.04.2011 14:02:47 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:148): Serializing 14505 objects to D:\Work\Java\LIMES\cache\1580478301.ser
+08.04.2011 14:02:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:67): Loading target data ...
+08.04.2011 14:02:49 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.getData(PPJoinController.java:151): No cached data found for dbpedia
+08.04.2011 14:02:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:69): Properties are [dbpedia-o:pages]
+08.04.2011 14:02:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:99): Query issued is 
+PREFIX dc-terms: <http://purl.org/dc/terms>
+PREFIX dbpedia-p: <http://dbpedia.org/property/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpedia-r: <http://dbpedia.org/resource/Category/>
+PREFIX dbpedia-o: <http://dbpedia.org/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?y ?v0
+WHERE {
+?y rdf:type dbpedia-o:Book .
+?y dbpedia-o:pages ?v0 .
+}
+
+08.04.2011 14:02:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:102): Querying the endpoint.
+08.04.2011 14:02:49 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:110): Getting statements 0 to -1
+08.04.2011 14:02:56 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:191): Retrieved 14714 triples and 14505 entities.
+08.04.2011 14:02:56 INFO  [main] de.uni_leipzig.simba.query.SparqlQueryModule.fillCache(SparqlQueryModule.java:192): Retrieving statements took 6.843 seconds.
+08.04.2011 14:02:56 INFO  [main] de.uni_leipzig.simba.cache.HybridCache.saveToFile(HybridCache.java:148): Serializing 14505 objects to D:\Work\Java\LIMES\cache\1611498108.ser
+08.04.2011 14:02:57 INFO  [main] de.uni_leipzig.simba.controller.PPJoinController.run(PPJoinController.java:95): Getting links ...
+08.04.2011 14:02:57 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:68): Expression euclidean(x.dbpedia-o:pages,y.dbpedia-o:pages) is atomic.
+08.04.2011 14:02:57 INFO  [main] de.uni_leipzig.simba.mapper.SimpleSetConstraintsMapper.getLinks(SimpleSetConstraintsMapper.java:69): Starting atomic mapper on euclidean(x.dbpedia-o:pages,y.dbpedia-o:pages) with threshold 0.04
+08.04.2011 14:02:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.TotalOrderBlockingMapper.getMapping(TotalOrderBlockingMapper.java:62): Comparing dbpedia-o:pages and dbpedia-o:pages, ergo 1 dimensions
+08.04.2011 14:02:57 INFO  [main] de.uni_leipzig.simba.mapper.atomic.TotalOrderBlockingMapper.getMapping(TotalOrderBlockingMapper.java:66): Granularity is set to 1
